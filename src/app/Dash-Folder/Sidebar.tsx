@@ -17,7 +17,7 @@ const SidebarContainer = styled.div<{ isOpen: boolean }>`
   left: 0;
   width: ${({ isOpen }) => (isOpen ? '250px' : '80px')};
   height: 100%;
-  background-color: #343e5a;
+  background: linear-gradient(to bottom, #d3b99f, #09464b);
   overflow-x: hidden;
   transition: 0.3s;
   color: #fff;
