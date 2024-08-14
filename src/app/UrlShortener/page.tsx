@@ -520,7 +520,7 @@ const UrlShortener: React.FC = () => {
         </UrlInfo>
         <p>**Clicks: {url.clickCount}</p>
         <ButtonGroup>
-          <CopiedButton onClick={() => handleCopy(url.shortenedUrl)}>Copy</CopiedButton>
+          <CopiedButton onClick={handleCopy}>Copy</CopiedButton>
           <QRedButton onClick={() => setQrCodeVisible(!qrCodeVisible)}>Generate QR</QRedButton>
         </ButtonGroup>
         {qrCodeVisible && (
