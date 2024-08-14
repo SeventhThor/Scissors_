@@ -11,7 +11,7 @@ export const shortenUrl = async (longUrl: string, customAlias: string) => {
       },
       {
         headers: {
-          Authorization: `Bearer ${'n9n2tOcSFN8cLXHlbtdeAL1jyLNJFbSSt66y1MCC4hSToA2lTGIA0u8GaMDj'}`, // Correct format for the API key
+          Authorization: `Bearer ${process.env.NEXT_PUBLIC_TINYURL_API_KEY }`, // Correct format for the API key
           'Content-Type': 'application/json',
         },
       }
